@@ -1,10 +1,5 @@
 #!/bin/bash -x
 
- if [ "$(id -u)" = "0"] then
- echo "You must be a Superuser to run this script. e.g run using sudo"
- exit 1
- fi
-
  sudo apt-get -y update
  sudo apt-get -y upgrade
 
