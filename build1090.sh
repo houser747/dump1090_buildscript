@@ -33,6 +33,7 @@
  blacklist rtl2832
  blacklist rtl2830
  EOF
+ 
  sudo cp ./nortl.conf /etc/modprobe.d/notrl.conf
 
  sudo reboot
