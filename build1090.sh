@@ -28,7 +28,7 @@
  sudo chmod +x /etc/init.d/dump1090.sh
  sudo update-rc.d dump1090.sh defaults
 
- /bin/cat <<EOF > nortl.conf
+ cat <<EOF > nortl.conf
  blacklist dvb_usb_rtl28xxu
  blacklist rtl2832
  blacklist rtl2830
