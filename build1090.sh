@@ -23,14 +23,16 @@
  git clone git://github.com/MalcolmRobb/dump1090.git
  cd dump1090
  make
+ cd ~
  sudo cp ./dump1090/dump1090.sh /etc/init.d/dump1090.sh
  sudo chmod +x /etc/init.d/dump1090.sh
  sudo update-rc.d dump1090.sh defaults
 
- /bin/cat << _EOF_ > /etc/modprobe.d/nortl.conf
+ /bin/cat <<EOF > nortl.conf
  blacklist dvb_usb_rtl28xxu
  blacklist rtl2832
  blacklist rtl2830
- _EOF_
+ EOF
+ sudo cp ./nortl.conf /etc/modprobe.d/notrl.conf
 
  sudo reboot
