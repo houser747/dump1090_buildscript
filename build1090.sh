@@ -28,11 +28,7 @@
  sudo chmod +x /etc/init.d/dump1090.sh
  sudo update-rc.d dump1090.sh defaults
 
- cat <<EOF > nortl.conf
- blacklist dvb_usb_rtl28xxu
- blacklist rtl2832
- blacklist rtl2830
- EOF
+ printf 'blacklist dvb_usb_rtl28xxu\nblacklist rtl2832\nblacklist rtl2830\n' > nortl.conf
  
  sudo cp ./nortl.conf /etc/modprobe.d/notrl.conf
 
