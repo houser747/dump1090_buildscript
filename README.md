@@ -1,4 +1,4 @@
-This script assumes you have created a new SD card for your pi and have logged on.
+This script assumes you have written latest version Raspbian Wheezy to your SD card for your pi and have logged on. (I have not tested this script with any other pi OS.)
 
 PLEASE make sure your RTL USB dongle is not pluged in until your pi reboots at the end of the script
 
